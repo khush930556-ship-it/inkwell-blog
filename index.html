@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Inkwell — a home for curious minds. Read essays, guides, and personal stories on technology, travel, food, and life." />
+  <title>Inkwell — Stories worth reading</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Inkwell home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.5c3.5 4.2 6.5 7.6 6.5 11.2a6.5 6.5 0 1 1-13 0C5.5 10.1 8.5 6.7 12 2.5z" />
+          </svg>
+        </span>
+        <span class="brand-name">Inkwell</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#" class="is-active" aria-current="page">Home</a>
+        <a href="#stories">Stories</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.2-3.2" />
+          </svg>
+        </button>
+        <a class="btn btn-primary" href="#write">Start writing</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">The Inkwell Journal</span>
+          <h1 class="hero-title">Stories worth reading, ideas worth sharing.</h1>
+          <p class="hero-lead">
+            A home for curious minds. Discover essays, guides, and personal stories
+            on technology, travel, food, and life — written by people who care about
+            the craft.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#stories">
+              Explore stories
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="#write">Become a writer</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat"><strong>1.7M+</strong><span>stories published</span></div>
+            <div class="stat"><strong>120k+</strong><span>writers</span></div>
+            <div class="stat"><strong>4.9&#9733;</strong><span>reader rating</span></div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img
+            class="hero-photo"
+            src="https://picsum.photos/seed/inkwell-desk/900/980"
+            alt="A writer's desk with a notebook, coffee, and warm morning light"
+            fetchpriority="high"
+          />
+          <div class="hero-card">
+            <img class="hero-card-avatar" src="https://i.pravatar.cc/80?img=32" alt="" />
+            <div>
+              <span class="hero-card-tag">Editor's pick</span>
+              <p class="hero-card-title">The quiet power of writing every morning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LISTINGS ================= -->
+    <section class="listings" id="stories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Latest stories</h2>
+            <p>Fresh perspectives, published every day.</p>
+          </div>
+
+          <div class="filters" id="filters" role="group" aria-label="Filter stories by category">
+            <button class="filter is-active" type="button" data-filter="all">All</button>
+            <button class="filter" type="button" data-filter="technology">Technology</button>
+            <button class="filter" type="button" data-filter="lifestyle">Lifestyle</button>
+            <button class="filter" type="button" data-filter="travel">Travel</button>
+            <button class="filter" type="button" data-filter="food">Food</button>
+          </div>
+        </div>
+
+        <div class="post-grid" id="postGrid">
+          <!-- 1 -->
+          <article class="post-card" data-category="lifestyle">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/open-notebook/800/500" alt="" decoding="async" />
+              <span class="post-tag">Lifestyle</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">The quiet power of writing every morning</a></h3>
+              <p class="post-excerpt">A small daily ritual that clears the mind, sharpens your thinking, and makes everything else a little easier.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=12" alt="" />
+                <span class="author">Maya Chen</span>
+                <span class="dot"></span>
+                <time datetime="2026-03-12">Mar 12, 2026</time>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="post-card" data-category="technology">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/ai-stories/800/500" alt="" decoding="async" />
+              <span class="post-tag">Technology</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">How AI is reshaping the way we tell stories</a></h3>
+              <p class="post-excerpt">From drafting to editing, a look at the tools writers are quietly adopting — and what they still can't replace.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=33" alt="" />
+                <span class="author">Daniel Okafor</span>
+                <span class="dot"></span>
+                <time datetime="2026-03-10">Mar 10, 2026</time>
+                <span class="dot"></span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="post-card" data-category="travel">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/lisbon-trip/800/500" alt="" decoding="async" />
+              <span class="post-tag">Travel</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">A weekend in Lisbon: notes from the road</a></h3>
+              <p class="post-excerpt">Tiled streets, custard tarts, and the sunset viewpoint nobody tells you about. A slow guide to the city.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=47" alt="" />
+                <span class="author">Sofia Almeida</span>
+                <span class="dot"></span>
+                <time datetime="2026-03-08">Mar 8, 2026</time>
+                <span class="dot"></span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="post-card" data-category="food">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/home-recipes/800/500" alt="" decoding="async" />
+              <span class="post-tag">Food</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">Five recipes that taste like home</a></h3>
+              <p class="post-excerpt">Simple, comforting dishes passed down through generations — and the stories behind each one.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=5" alt="" />
+                <span class="author">Priya Nair</span>
+                <span class="dot"></span>
+                <time datetime="2026-03-06">Mar 6, 2026</time>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="post-card" data-category="lifestyle">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/workspace-design/800/500" alt="" decoding="async" />
+              <span class="post-tag">Lifestyle</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">Designing a workspace you actually love</a></h3>
+              <p class="post-excerpt">Light, texture, and a little clutter. How to build a desk setup that helps you focus instead of distracting you.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=68" alt="" />
+                <span class="author">Leo Martins</span>
+                <span class="dot"></span>
+                <time datetime="2026-03-03">Mar 3, 2026</time>
+                <span class="dot"></span>
+                <span>6 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="post-card" data-category="technology">
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/slow-productivity/800/500" alt="" decoding="async" />
+              <span class="post-tag">Technology</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">The beginner's guide to slow productivity</a></h3>
+              <p class="post-excerpt">Doing fewer things, at a natural pace, with a focus on quality. A calmer alternative to the hustle.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=24" alt="" />
+                <span class="author">Anna Weiss</span>
+                <span class="dot"></span>
+                <time datetime="2026-02-28">Feb 28, 2026</time>
+                <span class="dot"></span>
+                <span>8 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 (extra) -->
+          <article class="post-card is-extra" data-category="lifestyle" hidden>
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/handwritten-letters/800/500" alt="" decoding="async" />
+              <span class="post-tag">Lifestyle</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">Why we still fall for handwritten letters</a></h3>
+              <p class="post-excerpt">In a world of instant messages, the slow, imperfect art of putting pen to paper still means more.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=12" alt="" />
+                <span class="author">Maya Chen</span>
+                <span class="dot"></span>
+                <time datetime="2026-02-24">Feb 24, 2026</time>
+                <span class="dot"></span>
+                <span>4 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 (extra) -->
+          <article class="post-card is-extra" data-category="travel" hidden>
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/iceland-lights/800/500" alt="" decoding="async" />
+              <span class="post-tag">Travel</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">Chasing northern lights in Iceland</a></h3>
+              <p class="post-excerpt">Cold nights, warm cabins, and a sky that refuses to sit still. What to know before you go.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=47" alt="" />
+                <span class="author">Sofia Almeida</span>
+                <span class="dot"></span>
+                <time datetime="2026-02-20">Feb 20, 2026</time>
+                <span class="dot"></span>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 (extra) -->
+          <article class="post-card is-extra" data-category="food" hidden>
+            <a class="post-thumb" href="#">
+              <img src="https://picsum.photos/seed/perfect-coffee/800/500" alt="" decoding="async" />
+              <span class="post-tag">Food</span>
+            </a>
+            <div class="post-body">
+              <h3 class="post-title"><a href="#">The art of the perfect cup of coffee</a></h3>
+              <p class="post-excerpt">Grind size, water temperature, and patience. Small adjustments that make a big difference in the cup.</p>
+              <div class="post-meta">
+                <img class="avatar" src="https://i.pravatar.cc/80?img=5" alt="" />
+                <span class="author">Priya Nair</span>
+                <span class="dot"></span>
+                <time datetime="2026-02-18">Feb 18, 2026</time>
+                <span class="dot"></span>
+                <span>5 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="listings-footer">
+          <button class="btn btn-outline" id="loadMore" type="button">Load more stories</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NEWSLETTER ================= -->
+    <section class="newsletter" id="write">
+      <div class="container">
+        <div class="newsletter-inner">
+          <div class="newsletter-copy">
+            <h2>Get the best stories in your inbox</h2>
+            <p>Join 40,000+ curious readers. One thoughtful email every Sunday — no spam, ever.</p>
+          </div>
+
+          <div class="newsletter-right">
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <label class="sr-only" for="email">Email address</label>
+              <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+            <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" id="about">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#" aria-label="Inkwell home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2.5c3.5 4.2 6.5 7.6 6.5 11.2a6.5 6.5 0 1 1-13 0C5.5 10.1 8.5 6.7 12 2.5z" />
+            </svg>
+          </span>
+          <span class="brand-name">Inkwell</span>
+        </a>
+        <p>A home for curious minds. Independent stories on the things worth slowing down for.</p>
+        <div class="socials">
+          <a class="social" href="#" aria-label="Inkwell on X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 3H21l-6.6 7.6L22 21h-6.1l-4.8-6.2L5.6 21H3.4l7.1-8.1L2.6 3h6.2l4.3 5.7L18.9 3Zm-1.1 16h1.7L7.4 4.7H5.6L17.8 19Z" /></svg>
+          </a>
+          <a class="social" href="#" aria-label="Inkwell on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" /></svg>
+          </a>
+          <a class="social" href="#" aria-label="Inkwell on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.9 3.5a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM3 9h3.8v12H3V9Zm6 0h3.6v1.6h.05c.5-.9 1.7-1.9 3.6-1.9 3.8 0 4.5 2.4 4.5 5.6V21h-3.8v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21H9V9Z" /></svg>
+          </a>
+          <a class="social" href="#" aria-label="Inkwell on YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.9C18.2 5 12 5 12 5s-6.2 0-7.8.3A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.9C5.8 19 12 19 12 19s6.2 0 7.8-.3a2.6 2.6 0 0 0 1.8-1.9A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8ZM10 15V9l5.2 3-5.2 3Z" /></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#stories">Stories</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col" id="categories">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Food</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Write for us</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Inkwell. All rights reserved.</p>
+      <div class="legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
